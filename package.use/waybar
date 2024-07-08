@@ -1,0 +1,4 @@
+gui-apps/waybar network wifi tray
+# required by gui-apps/waybar-0.10.3::gentoo[tray]
+# required by waybar (argument)
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
