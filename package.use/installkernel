@@ -1,0 +1,3 @@
+# (dracut) Generate an initrd or UKI on each kernel installation
+# (grub) Re-generate grub.cfg on each kernel installation, used grub.cfg is overridable with GRUB_CFG env var
+sys-kernel/installkernel dracut grub
