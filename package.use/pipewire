@@ -1,0 +1,12 @@
+# To use PipeWire as a sound server, specify the sound-server USE flag on media-video/pipewire[1].
+# Then, if using PipeWire as a replacement for the PulseAudio sound server:
+#
+# 1. Ensure media-sound/pulseaudio-daemon is not installed. This is necessary to avoid issues resulting from running more than one sound server.
+# 2. Ensure media-libs/libpulse is installed, which will allow PipeWire to emulate a PulseAudio sound server. Not many applications currently support PipeWire's native API.
+# 3. Ensure the pulseaudio USE flag is still set globally.
+###
+media-video/pipewire extra sound-server
+#
+### Deps - libsdl2 USE "wayland" needs "gles2"
+#
+media-libs/libsdl2 gles2 -pipewire
